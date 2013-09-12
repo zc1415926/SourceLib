@@ -8,10 +8,9 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="assets/css/docs.css" rel="stylesheet">
-	<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script><script src="js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="js/bootstrap.js" type="text/javascript"></script><script src="js/template.js" type="text/javascript"></script><script src="js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="img/favicon.ico">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -20,6 +19,18 @@
 
     <!-- Le fav and touch icons -->
 	<link rel="shortcut icon" href="assets/ico/favicon.png">
+
+	
+	<script type="text/javascript">
+
+var start = new Date().getTime();
+function onLoad() {
+  var now = new Date().getTime();
+  var latency = now - start;
+  alert("page loading time: " + latency);
+}
+
+</script>
 
   </head>
   <body data-spy="scroll" data-target=".bs-docs-sidebar">
@@ -34,7 +45,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="./index.html">Bootstrap</a>
+          <a class="brand" href="./index.html">人和街小学信息中心</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
@@ -44,20 +55,21 @@
                 <a href="#">&nbsp;&nbsp;<img src="assets/img/logo.png">&nbsp;&nbsp;</a>
               </li>
 			  
-			  <li class="nav-collapse">
-			  <ul class="nav">
-			  <li class="dropdown">
-			    <a href="#a" class="dropdown-toggle" data-toggle="dropdown">
-				  API Documentation <b class="caret"></b></a>
-				<ul class="dropdown-menu">
-				  <li><a>Namespaces</a></li>
-				  <li><a>Zend</a></li>
-				</ul>
-			  </li></ul></li>
-			  
-			  
-              <li class="active">
-                <a href="./index.html">影视课堂</a>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>影视课堂</strong><b class="caret"></b></a>
+                <ul class="dropdown-menu active">
+                  <li><a href="./index.html">主页</a></li>
+				  <li class="divider"></li>
+                  <li><a href="./Chinese.html">语文</a></li>
+				  <li class="divider"></li>
+                  <li><a href="./Mathematics.html">数学</a></li>
+				  <li class="divider"></li>
+                  <li><a href="./English.html">英语</a></li>
+				  <li class="divider"></li>
+                  <li><a href="Morality.html">品德</a></li>
+				  <li class="divider"></li>
+				  <li><a href="Scientist.html">科学</a></li>
+                </ul>
               </li>
               <li class="">
                 <a href="http://www.rhjxx.com/">人和街小学</a>
@@ -147,5 +159,8 @@
         </div>
     </footer>
     
+	 <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>
